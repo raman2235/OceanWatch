@@ -1,4 +1,4 @@
-#OceanWatch - Ocean Hazard Reporting Platform
+##OceanWatch - Ocean Hazard Reporting Platform
 
 This is a web-based platform for monitoring and reporting coastal hazards. It combines user-submitted reports with data from social media feeds to provide a comprehensive view of potential threats. This project was developed as part of a group effort.
 
