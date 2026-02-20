@@ -1,15 +1,14 @@
-# Python / Backend
+# Python Backend
 backend/__pycache__/
 backend/*.pyc
 backend/coastal.db
 backend/.env
 
-# Node / Frontend
+# Node Frontend
 frontend/node_modules/
 frontend/dist/
 frontend/.env
-frontend/.eslintcache
 
-# OS files
+# System Files
 .DS_Store
 Thumbs.db
