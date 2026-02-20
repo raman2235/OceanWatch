@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+coastal.db
+frontend/node_modules/
+backend/.env
