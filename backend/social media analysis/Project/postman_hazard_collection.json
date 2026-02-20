@@ -1,0 +1,90 @@
+{
+  "info": {
+    "name": "Crowdsourced Hazard Reporting API",
+    "_postman_id": "hazard-api-collection",
+    "description": "Endpoints to test social media fetch, citizen reports, and hotspots",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Home",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": [""]
+        }
+      }
+    },
+    {
+      "name": "Refresh Social Media",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/api/refresh?q=flood,tsunami,cyclone&limit=5",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["api", "refresh"],
+          "query": [
+            {"key": "q", "value": "flood,tsunami,cyclone"},
+            {"key": "limit", "value": "5"}
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Social Media",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/api/social-media",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["api", "social-media"]
+        }
+      }
+    },
+    {
+      "name": "Submit Citizen Report",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"description\": \"Flood near Yamuna river\",\n  \"location\": \"Delhi, India\",\n  \"media\": \"http://example.com/flood.jpg\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/api/report",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["api", "report"]
+        }
+      }
+    },
+    {
+      "name": "Get Hotspots",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/api/hotspots",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["api", "hotspots"]
+        }
+      }
+    }
+  ]
+}
